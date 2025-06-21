@@ -1,0 +1,89 @@
+		*{
+ margin : 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+main {
+    margin: 1vh 1rem;
+    position: fixed;
+    height: 98vh;
+    width: 98vw;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    column-count: 3;
+    column-fill: auto;
+    font-size: 10pt;
+    line-height: 14pt;
+}
+
+
+table {
+    width:auto;
+    height:50%;
+   }
+
+table, tr,td{
+    border: 1px;
+}
+.tap{
+    margin-left: 30px;
+}
+
+.first{
+    margin-left: 40px;
+}
+.second{
+    margin-left: 50px;
+}
+ul{
+    margin-left:10px;
+}
+
+li{
+    margin-left: 30px;
+}
+
+a {
+    color: black;
+    margin-block-start: .5rem;
+    margin-block-end: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+@media only screen and (max-width: 500px) {
+
+
+  main {
+    position: static;       /* 고정 해제 */
+    height: auto;           /* 콘텐츠 길이에 따라 늘어남 */
+    overflow-y: visible;    /* 자동 스크롤 */
+    overflow-x: hidden;
+    column-count: 1;        /* 열 1개로 변경 */
+    width: 98vw;
+    margin-top: 400px;
+  }
+
+  body {
+    overflow-y: auto;       /* 전체 문서에 대해 스크롤 허용 */
+  }
+
+
+
+}
+
